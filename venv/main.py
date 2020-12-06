@@ -40,6 +40,7 @@ class Main(tk.Frame):
         self.text_1.delete('1.0', tk.END)
 
     def calculation(self):
+        self.clear_line()
         filename = self.entry_0_string.get()
         fileString = fisher.open_file(filename) # Получаем путь файла
         if fileString[0] == 0:
